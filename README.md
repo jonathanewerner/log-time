@@ -8,10 +8,10 @@ Premises:
 - The time tracking should auto-stop/resume on notebook standby/wake. 
 - It should *not* autopause on inactivity as i'm often not on my notebook while pair-programming.
 
+#### Screenshot
 <img width="454" alt="screen shot 2016-07-03 at 14 58 20" src="https://cloud.githubusercontent.com/assets/3755413/16545558/a2893da8-412e-11e6-8857-493d1bb6ea31.png">
 
-
-### Setup
+#### Setup
 Basic idea: another tool (for example Keyboard Maestro for MacOS) triggers a bash script on notebook standby and wake up, plus provides two key bindings for triggering the same script, setting the "work mode" ("personal" or "work").
 The script looks like this:
 
@@ -57,5 +57,5 @@ The advantage of this file based format is that it's
 - trivial to manually correct when something went wrong 
 - automatically backup-ed via git.
 
-### Run
+#### Run
 Calling `node index.js` (feel free to `ln -s` this into a nice script name in your path) from this repo should give you a breakdown per week of your personal and work-related hours as seen in the screenshot above.
