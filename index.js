@@ -83,12 +83,14 @@ function getTimeSlots(timeEntries) {
       }
     }
   }, [])
+  const resultShortsFilteredOut = result.filter((slot) => slot.duration > 60)
+
   if (currentSlot) {
     endSlot(currentSlot, { date: new Date().addHours(1) })
     currentSlot.current = true
-    result.push(currentSlot)
+    resultShortsFilteredOut.push(currentSlot)
   }
-  return result
+  return resultShortsFilteredOut
 }
 
 const durationPretty = (seconds) => humanizeDuration(seconds * 1000)
