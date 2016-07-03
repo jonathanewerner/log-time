@@ -56,3 +56,5 @@ The advantage of this file based format is that it's
 
 ### Run
 Calling `node index.js` (feel free to `ln -s` this into a nice script name in your path) from this repo should give you a breakdown per week of your personal and work-related hours:
+
+<img width="461" alt="screen shot 2016-07-03 at 14 48 21" src="https://cloud.githubusercontent.com/assets/3755413/16545501/45de5f58-412d-11e6-8407-fa54897ee9dc.png">
