@@ -115,7 +115,7 @@ function printTimeSlotsByYearWeek(timeSlotsByYearWeek) {
     const overallTimeSpentWorking = sumBy(timeSlotsForYearWeek.filter((slot) => slot.type === WORK), (slot) => slot.duration)
     const overallTimeSpentPersonal = sumBy(timeSlotsForYearWeek.filter((slot) => slot.type === PERSONAL), (slot) => slot.duration)
     console.info()
-    console.info(`Working: ${durationPretty(overallTimeSpentWorking)}`)
+    overallTimeSpentWorking && console.info(`Working: ${durationPretty(overallTimeSpentWorking)}`)
     overallTimeSpentPersonal && console.info(chalk.dim(`Personal: ${durationPretty(overallTimeSpentPersonal)}`))
     console.info()
   })
